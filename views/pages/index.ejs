@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head'); %>
+</head>
+<body class="container">
+
+<header>
+    <%- include('../partials/header'); %>
+</header>
+
+<main>
+    <div class="jumbotron">
+            <% if (jumbo) { %>
+        <h1><%= jumbo %></h1>
+        <% } %>
+        <% if (title) { %>
+            <h2><%= title %></h2>
+          <% } %>
+          <% if (welcome) { %>
+            <p><%= welcome %></p>
+          <% } %>
+        
+    </div>
+</main>
+
+<footer>
+    <%- include('../partials/footer'); %>
+</footer>
+
+</body>
+</html>
